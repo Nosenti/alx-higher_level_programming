@@ -2,6 +2,7 @@
 """a class the defines a square
 """
 
+
 class Square:
     """class with private attribute - size
     """
