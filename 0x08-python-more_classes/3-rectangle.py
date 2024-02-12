@@ -69,3 +69,15 @@ class Rectangle:
         if self.__height != 0 and self.__width != 0:
             per = (self.__height + self.__width) * 2
         return per
+
+    def __str__(self):
+        """Returns # for rectangle"""
+        if self.__height == 0 or self.__width == 0:
+            print("")
+
+        rect = []
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rect.append("#")
+            rect.append("\n")
+        return ("".join(rect))
