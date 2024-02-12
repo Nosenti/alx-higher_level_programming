@@ -57,3 +57,16 @@ class Rectangle:
         elif (not isinstance(value, int)):
             raise TypeError("height must be an integer")
         self.__height = value
+
+    def area(self):
+        """Public instance method for area"""
+        rect_area = self.__height * self.__width
+        return rect_area
+    
+    def perimeter(self):
+        """Public instance method for perimeter"""
+        per = 0
+        if self.__height != 0 and self.__width != 0:
+            per = (self.__height + self.__width) * 2
+        return per
+
