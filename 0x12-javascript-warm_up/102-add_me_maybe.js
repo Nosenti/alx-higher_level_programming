@@ -1,9 +1,7 @@
 #!/usr/bin/node
-function addMeMaybe (x, fn) {
-  for (let i = 0; i < x; i++) {
-    x = x + 1;
-    fn();
-  }
+function addMeMaybe(x, fn) {
+  x = x + 1;
+  fn(x);
 }
 module.exports = {
   addMeMaybe
