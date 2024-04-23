@@ -1,7 +1,9 @@
 #!/usr/bin/node
-function converter(c) {
-	
+function converter (b) {
+  return function convert (num) {
+    return num.toString(b);
+  };
 }
 module.exports = {
-  converter,
+  converter
 };
