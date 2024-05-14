@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Using urllib to fetch response"""
+"""Using urllib to fetch response
+script to take URL, sned s a request and display the value of
+X-Request_Id variable found in the header
+"""
 import urllib.request
 import sys
 
