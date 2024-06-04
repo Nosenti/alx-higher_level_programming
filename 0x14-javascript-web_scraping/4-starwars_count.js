@@ -11,7 +11,7 @@ request(apiUrl, { json: true }, (error, response, body) => {
     films.forEach((film) => {
       if (
         film.characters.includes(
-          `https://swapi-api.alx-tools.com/api/people/18/`
+          'https://swapi-api.alx-tools.com/api/people/18/'
         )
       ) {
         count++;
